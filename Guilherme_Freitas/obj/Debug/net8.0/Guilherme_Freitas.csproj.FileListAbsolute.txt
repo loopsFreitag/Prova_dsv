@@ -125,3 +125,4 @@
 /home/guilhermef/Projects/prova_dsv/Guilherme_Freitas/obj/Debug/net8.0/Guilherme_Freitas.genruntimeconfig.cache
 /home/guilhermef/Projects/prova_dsv/Guilherme_Freitas/obj/Debug/net8.0/ref/Guilherme_Freitas.dll
 /home/guilhermef/Projects/prova_dsv/Guilherme_Freitas/bin/Debug/net8.0/appsettings.json
+/home/guilhermef/Projects/prova_dsv/Guilherme_Freitas/obj/Debug/net8.0/Guilherme_Freitas.sourcelink.json

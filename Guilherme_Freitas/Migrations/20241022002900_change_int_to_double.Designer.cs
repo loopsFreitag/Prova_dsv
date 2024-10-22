@@ -2,6 +2,7 @@
 using Guilherme_Freitas.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -9,9 +10,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Guilherme_Freitas.Migrations
 {
     [DbContext(typeof(ProvaDbContext))]
-    partial class ProvaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241022002900_change_int_to_double")]
+    partial class change_int_to_double
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.10");

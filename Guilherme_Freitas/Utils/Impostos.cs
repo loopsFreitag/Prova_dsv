@@ -6,7 +6,7 @@ namespace Guilherme_Freitas.Utils
 {
     public class Imposto
     {
-        public static double ImpostoIrrf(int SalarioBruto)
+        public static double ImpostoIrrf(double SalarioBruto)
         {
             double aliquota = 0.0;
 
@@ -27,7 +27,42 @@ namespace Guilherme_Freitas.Utils
                 aliquota = 27.5;
             }
 
-            return aliquota;
+            double valor = (SalarioBruto * aliquota) / 100;
+
+            return valor;
         }
+
+        public static double ImpostoInss(double SalarioBruto)
+        {
+            double aliquota = 8;
+
+            if (SalarioBruto >= 1693.73)
+            {
+                aliquota = 9;
+            }
+            if (SalarioBruto >= 2882.9)
+            {
+                aliquota = 11;
+            }
+            if (SalarioBruto >= 5645.8)
+            {
+                return 621.03;
+            }
+
+            double valor = (SalarioBruto * aliquota) / 100;
+
+            return valor;
+        }
+
+        public static double ImpostoFgts(double SalarioBruto)
+        {
+            double aliquota = 8;
+
+            double valor = (SalarioBruto * aliquota) / 100;
+
+            return valor;
+        }
+
+        
     }
 }

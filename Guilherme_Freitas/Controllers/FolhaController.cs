@@ -51,6 +51,10 @@ namespace Guilherme_Freitas.Controllers
 
 
             folha.ImpostoIrrf = Imposto.ImpostoIrrf(folha.SalarioBruto);
+            folha.ImpostoInss = Imposto.ImpostoInss(folha.SalarioBruto);
+            folha.ImpostoFgts = Imposto.ImpostoFgts(folha.SalarioBruto);
+
+            folha.SalarioLiquido = folha.SalarioBruto - folha.ImpostoIrrf - folha.ImpostoInss;
 
            _context.Folhas.Add(folha);
 
